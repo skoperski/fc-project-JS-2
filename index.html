@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Przelicznik walut</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="app__header">
+        <div class="app__logo"><img src="./budget.png" /></div>
+        <div class="header__content"><p>Przelicznik walut</p></div>
+      </div>
+    </header>
+    <section class="wrapper" id="section">
+      <div class="section__div">
+        <input
+          type="number"
+          class="section__input"
+          id="sectionInput"
+          placeholder="PLN value"
+        />
+        <select class="section__select" id="sectionSelect">
+          <option>EUR</option>
+          <option>USD</option>
+          <option>CHF</option>
+        </select>
+        <button class="section__button" id="sectionBtn">Przelicz</button>
+        <p class="section__p">TO</p>
+        <span class="section__span" id="sectionSpan">0 PLN</span>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
